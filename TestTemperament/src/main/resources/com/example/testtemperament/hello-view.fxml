@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testtemperament.SceneControler">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="920.0" style="-fx-background-color: #E6DDC6;">
+         <children>
+            <Label layoutX="222.0" layoutY="75.0" style="-fx-text-fill: #5D534A;" text="Тест на визначення темпераменту">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="192.0" style="-fx-text-fill: #5D534A;" text="Вам пропонується кілька питань. На кожне питання відповідайте лише «так» або «ні».">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="224.0" style="-fx-text-fill: #5D534A;" text="Не витрачайте час на обговорення питань, тут не може бути гарних або поганих відповідей,">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="256.0" style="-fx-text-fill: #5D534A;" text="тому що це не випробування розумових здібностей.">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="374.0" layoutY="392.0" mnemonicParsing="false" onAction="#StartButtonClick" prefHeight="71.0" prefWidth="210.0" text="Почати тестування">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

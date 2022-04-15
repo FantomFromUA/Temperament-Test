@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="920.0" style="-fx-background-color: #E6DDC6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testtemperament.QuestionsSceneControler">
+   <children>
+      <Label fx:id="labelQuestion" layoutX="14.0" layoutY="32.0" maxWidth="920.0" style="-fx-text-fill: #5D534A;" text="1. Чи часто Ви відчуваєте жагу до нових вражень, до того, щоб відволіктися, випробувати сильні відчуття?" wrapText="true">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label fx:id="labelCount" layoutX="833.0" layoutY="525.0" style="-fx-text-fill: #5D534A;" text="1/57">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonAnswer" disable="true" layoutX="609.0" layoutY="267.0" mnemonicParsing="false" onAction="#answerClick" prefHeight="87.0" prefWidth="229.0" text="Відповісти">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="radioNo" layoutX="168.0" layoutY="311.0" mnemonicParsing="false" onAction="#selectAnswer" style="-fx-text-fill: #5D534A;" text="НІ">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Answer" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioYes" layoutX="168.0" layoutY="242.0" mnemonicParsing="false" onAction="#selectAnswer" style="-fx-text-fill: #5D534A;" text="ТАК" toggleGroup="$Answer">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
